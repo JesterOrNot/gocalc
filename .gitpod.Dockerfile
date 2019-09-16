@@ -1,4 +1,4 @@
-FROM rocker/r-ver
+FROM gitpod/workspace-full-vnc
 USER root
 RUN apt-get update && apt-get install gnuplot-x11 r-base
 # Install custom tools, runtime, etc. using apt-get
