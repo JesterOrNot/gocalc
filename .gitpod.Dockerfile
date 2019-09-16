@@ -1,6 +1,6 @@
 FROM rocker/r-ver
 USER root
-RUN apt-get update && apt-get install gnuplot-x11
+RUN apt-get update && apt-get install gnuplot-x11 r-base
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
 #
