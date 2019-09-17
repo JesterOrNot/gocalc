@@ -151,6 +151,22 @@ func pythagTheor() {
 	h = math.Pow(a,2) + math.Pow(b,2)
 	fmt.Println("hypot =",h)
 }
+func AOTrap() {
+	var a float64
+	var b float64
+	var h float64
+	var equ float64
+	equ = ((a + b)/2)*h
+	fmt.Println("Area =",equ)
+}
+func areaCalc() {
+	var input string
+	fmt.Print("Welcome to the area finder the shapes that this can find the area for so far are trapazoid(trap)\nWhat do you want?: ")
+	fmt.Scan(&input)
+	if input == "trap" {
+		AOTrap()
+	}
+}
 func geom() {
 	var input string
 	fmt.Print("Welcome to the geometry calculator! available calculators include: pythagTheor(pythag) \nwhat do you want?: ")
