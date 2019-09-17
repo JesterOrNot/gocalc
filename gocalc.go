@@ -149,11 +149,11 @@ func pythagTheor() {
 	fmt.Print("What is b?: ")
 	fmt.Scan(&b)
 	h = math.Pow(a,2) + math.Pow(b,2)
-	fmt.Println("The hypot is",h)
+	fmt.Println("hypot =",h)
 }
 func geom() {
 	var input string
-	fmt.Print("Welcome to the geometry calculator! available calculators include: pythagTheor(pythag) what do you want?: ")
+	fmt.Print("Welcome to the geometry calculator! available calculators include: pythagTheor(pythag) \nwhat do you want?: ")
 	fmt.Scan(&input)
 	if input == "pythag" {
 		pythagTheor()
