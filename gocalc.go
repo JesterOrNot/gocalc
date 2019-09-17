@@ -159,6 +159,14 @@ func AOTrap() {
 	equ = ((a + b)/2)*h
 	fmt.Println("Area =",equ)
 }
+func AOCirc() {
+	var r float64
+	var a float64
+	fmt.Print("What is the radius?: ")
+	fmt.Scan(&r)
+	a = math.Pi * (math.Pow(r,2))
+	fmt.Println("a = ",a)
+}
 func areaCalc() {
 	var input string
 	fmt.Print("Welcome to the area finder the shapes that this can find the area for so far are trapazoid(trap)\nWhat do you want?: ")
@@ -201,6 +209,7 @@ func misc() {
 	fmt.Println("wip")
 }
 func main() {
+	AOCirc()
 	var input string
 	fmt.Print("Welcome to Gocalc available calculators include algebra(algeb), geometry(geom), chemistry(chem), misc(misc), physics(phys)\nWhat calculator do you want?: ")
 	_, err := fmt.Scan(&input)
