@@ -209,7 +209,6 @@ func misc() {
 	fmt.Println("wip")
 }
 func main() {
-	AOCirc()
 	var input string
 	fmt.Print("Welcome to Gocalc available calculators include algebra(algeb), geometry(geom), chemistry(chem), misc(misc), physics(phys)\nWhat calculator do you want?: ")
 	_, err := fmt.Scan(&input)
