@@ -169,10 +169,12 @@ func AOCirc() {
 }
 func areaCalc() {
 	var input string
-	fmt.Print("Welcome to the area finder the shapes that this can find the area for so far are trapazoid(trap)\nWhat do you want?: ")
+	fmt.Print("Welcome to the area finder the shapes that this can find the area for so far are trapazoid(trap),circle(circ)\nWhat do you want?: ")
 	fmt.Scan(&input)
 	if input == "trap" {
 		AOTrap()
+	} else if input == "circ" {
+		AOCirc()
 	}
 }
 func geom() {
