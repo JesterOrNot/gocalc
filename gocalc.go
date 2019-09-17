@@ -169,10 +169,12 @@ func areaCalc() {
 }
 func geom() {
 	var input string
-	fmt.Print("Welcome to the geometry calculator! available calculators include: pythagTheor(pythag) \nwhat do you want?: ")
+	fmt.Print("Welcome to the geometry calculator! available calculators include: pythagTheor(pythag),area calc(ac) \nwhat do you want?: ")
 	fmt.Scan(&input)
 	if input == "pythag" {
 		pythagTheor()
+	} else if input =="ac" {
+		areaCalc()
 	}
 }
 func chem() {
