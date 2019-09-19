@@ -1,4 +1,3 @@
-
 version: 2.1
 jobs:
   build:
@@ -6,4 +5,4 @@ jobs:
       - image: gitpod/workspace-full # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: go build gocalc.go
+      - run: go run *.go
