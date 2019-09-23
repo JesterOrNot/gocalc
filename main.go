@@ -14,6 +14,16 @@ func algeb() {
 		linOfSym()
 	}
 }
+func areaCalc() {
+	var input string
+	fmt.Print("Welcome to the area finder the shapes that this can find the area for so far are trapazoid(trap),circle(circ)\nWhat do you want?: ")
+	fmt.Scan(&input)
+	if input == "trap" {
+		AOTrap()
+	} else if input == "circ" {
+		AOCirc()
+    }
+}
 func geom() {
 	var input string
 	fmt.Print("Welcome to the geometry calculator! available calculators include: pythagTheor(pythag),area calc(ac) \nwhat do you want?: ")
